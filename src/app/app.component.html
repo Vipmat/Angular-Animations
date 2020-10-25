@@ -5,9 +5,13 @@
       <button class="btn btn-primary mx" type="button" (click)="onAnimate()">
         Animate!
       </button>
-      <button class="btn btn-primary mx" type="button">Shrink!</button>
+      <button class="btn btn-primary mx" type="button" (click)="onShrink()">
+        Shrink!
+      </button>
       <hr />
       <div style="width: 100px; height: 100px" [@divState]="state"></div>
+      <br />
+      <div style="width: 100px; height: 100px" [@wildState]="wildState"></div>
     </div>
   </div>
   <hr />
